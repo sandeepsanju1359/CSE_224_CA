@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff0856"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/sandeep"
+        app:civ_border_color="@color/white"
+        app:civ_border_overlay="true"
+        app:civ_border_width="5dp" />
+
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tgBtn"
+        android:layout_below="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="15dp">
+        <Button
+            android:id="@+id/BtnL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Login"
+            android:textSize="20sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/BtnS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:backgroundTint="#1976D2"
+            android:textColor="#C2185B"
+            android:textSize="20sp"
+            app:cornerRadius="20dp"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <TextView
+        android:id="@+id/Tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_below="@id/Ll1"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="15dp"></TextView>
+
+    <TextView
+        android:id="@+id/Tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email address"
+        android:layout_below="@id/Tv4"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="15dp"></TextView>
+
+    <TextView
+        android:id="@+id/Tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@id/Edt1"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="15dp"></TextView>
+
+
+    <EditText
+        android:id="@+id/Edt1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Tv2"
+        android:layout_marginLeft="85dp"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"></EditText>
+
+    <EditText
+        android:id="@+id/Edt2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edt1"
+        android:layout_marginLeft="85dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="30dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="30dp"></EditText>
+
+    <CheckBox
+        android:id="@+id/Cbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edt2"
+        android:layout_marginLeft="100dp"
+        android:text="Remember me"></CheckBox>
+
+    <Button
+        android:id="@+id/Btnsub"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cbox"
+        android:text="Done"
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/Tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Btnsub"
+        android:text="Forgot password?"
+        android:layout_marginLeft="120dp"></TextView>
+
+<LinearLayout
+    android:id="@+id/Ll1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_below="@id/tgBtn"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/fb"></ImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/linkedin"></ImageView>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/twitter"></ImageView>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
